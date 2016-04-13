@@ -1,3 +1,11 @@
+/**
+ * Adjacency matrix code visualizer
+ * Dan Amlund Thomsen <dan@danamlund.dk>
+ * BSD license (2 clause)
+ *
+ * http://danamlund.dk/adjmatrix
+ */
+
 var state = {};
 
 function main() {
@@ -56,21 +64,18 @@ function main() {
             }
             downPoint = null;
         });
-        state.canvasOverlay.addEventListener('mousewheel', function(e) {
+        var mousewheel = function(e) {
             var p = getPoint(e);
             if (p !== null) {
                 var delta = e.wheelDelta ? e.wheelDelta/40 : (e.detail ? -e.detail : 0);
 	        if (delta) {
                     var oldSize = state.selected.length;
-                    var newSize;
                     var zoomAmount = 0.8;
                     if (delta > 0) { // zoom in
-                        newSize = oldSize <= 3 ? 1 : zoomAmount * oldSize;
-                        var halfSize = Math.floor(newSize / 2);
-                        var maxSize = state.selected.length - 1;
-                        if (newSize > 0) {
-                            zoom(Math.max(0, p.x - halfSize), Math.max(p.y - halfSize),
-                                 Math.min(maxSize, p.x + halfSize), Math.min(maxSize, p.y + halfSize));
+                        var newSize = oldSize <= 3 ? 1 : zoomAmount * oldSize;
+                        if (newSize != state.selected.length) {
+                            var delta = state.selected.length - newSize;
+                            zoomin(p, delta);
                         }
                     } else { // zoom out
                         var newSize = Math.min(state.data.nodes.length, 
@@ -83,7 +88,9 @@ function main() {
                 }
 	        return e.preventDefault() && false;
             }
-        }, false);
+        };
+        state.canvasOverlay.addEventListener('DOMMouseScroll', mousewheel, false);
+        state.canvasOverlay.addEventListener('mousewheel', mousewheel, false);
     }
 
     {
@@ -262,6 +269,7 @@ function zoom(x1, y1, x2, y2) {
     state.zoomSelected = newSelected;
     updateSelection();
 }
+
 function zoomout(amount) {
     if (state.zoomSelected !== null) {
         var zoomSelectedContains = new Array(state.zoomSelected.length);
@@ -308,6 +316,31 @@ function zoomout(amount) {
         }
         updateSelection();
     }
+}
+
+function zoomin(p, amount) {
+    var pDists = [];
+    for (var i = 0; i < state.selected.length; i++) {
+        var pDist = Math.min(Math.abs(i - p.x), Math.abs(i - p.y));
+        pDists.push({"i" : i, "dist" : pDist});
+    }
+    
+    pDists.sort(function (a, b) { return a.dist < b.dist ? 1 : (a.dist == b.dist ? 0 : -1) });
+
+    var removeI = new Array(state.selected.length);
+    for (var j = 0; j < amount && j < pDists.length; j++) {
+        removeI[pDists[j].i] = true;
+    }
+    
+    var newZoomSelected = [];
+    for (var i = 0; i < state.selected.length; i++) {
+        if (!removeI[i]) {
+            newZoomSelected.push(state.selected[i]);
+        }
+    }
+    
+    state.zoomSelected = newZoomSelected;
+    updateSelection();
 }
 
 function reset() {
@@ -427,7 +460,7 @@ function drawAdjacencyMatrix() {
     ctx.strokeRect(0, 0, state.canvas.width, state.canvas.height);
 
     document.getElementById("info").innerHTML = 
-        "Showing " + size + "/" + state.data.nodes.length + " classes";
+        "Showing " + size + "/" + state.data.nodes.length + " nodes";
     
     var selectedIndexOf = getArrayIndexOfer(state.selected, state.data.nodes.length);
 

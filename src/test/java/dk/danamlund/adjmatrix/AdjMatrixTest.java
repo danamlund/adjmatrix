@@ -77,21 +77,6 @@ public class AdjMatrixTest {
     }
 
     @Test
-    public void testSortedBySimilarity2() {
-        for (int i = 0; i < 10; i++) {
-            AdjMatrix adj = adj2.shuffled().sortedBySimilarity2();
-            List<String> ns = adj.getSelectedNodes();
-            Set<String> g0 = sets(ns.get(0), ns.get(1), ns.get(2));
-            Set<String> g1 = sets(ns.get(3), ns.get(4), ns.get(5));
-            Set<String> e0 = sets("A", "B", "C");
-            Set<String> e1 = sets("D", "E", "F");
-            Assert.assertTrue(e0.equals(g0) ^ e0.equals(g1));
-            Assert.assertTrue(e1.equals(g0) ^ e1.equals(g1));
-            Assert.assertEquals("G", ns.get(6));
-        }        
-    }
-
-    @Test
     public void testGroupedByPackage() {
         AdjMatrix adj = AdjMatrix.newInstance
             (Arrays.asList("foo.A", "foo.B", "bar.C", "baz.D"),

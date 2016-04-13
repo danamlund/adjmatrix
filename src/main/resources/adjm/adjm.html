@@ -99,18 +99,22 @@
 
   <h3>How</h3>
   <dl>
-    <dt>Zoom to rectangle</dt>
-    <dd>You can click-drag a rectangle to zoom in to a part of the
-    matrix. But zooming is weird in a NxN matrix. Zooming to a
-    rectangle shows all rows overlapping the height of the rectangle,
-    and all columns overlapping the width of the rectangle. Because of
-    this, zooming in areas away from the diagonal give weird
-    results.</dd>
+    <dt>Change size of adjacency matrix</dt>
+    <dd>The size of the matrix is calculated based on the biggest
+    square that can fit on your browser window, with room for the
+    options buttons.</dd>
+
+    <dt>Show nodes in rectangle</dt>
+    <dd>You can click-drag a rectangle to only see nodes overlapping
+    the rectangle. Click-dragging shows all rows overlapping the
+    height of the rectangle, and all columns overlapping the width of
+    the rectangle. Because of this, zooming in areas away from the
+    diagonal give weird results.</dd>
 
     <dt>Mouse-wheel zoom</dt>
     <dd>You can also use the mouse-wheel to zoom in or out around your
-    mouse pointer. Again, zooming around areas away from the diagonal
-    give weird results.</dd>
+    mouse pointer. Zooming away from the diagonal is weird because
+    adjacency matrices must have the same rows and columns.</dd>
 
     <dt>Group by</dt>
     <dd>Switches to a new graph where the nodes have been merged. Two

@@ -7,15 +7,15 @@
 This tool takes some .jar files as input and generates an adjacency
 matrix over the dependencies between the classes in the .jar files.
 
-The adjacency matrix is visualized through a generated .html
-file. This html file have the graph information and some javascript
-that visualize the adjacency matrix and lets you filter, zoom, ,order,
-color, and group the matrix how you want.
+The adjacency matrix is visualized through a generated stand-alone
+.html file. This html file have the graph information and some
+javascript that visualize the adjacency matrix and lets you filter,
+zoom, order, color, and group the matrix how you want.
 
 The dependencies between classes is generated using [[http://classycle.sourceforge.net/][classycle]].
 
-You can also supply the tool with a .[[https://en.wikipedia.org/wiki/Trivial_Graph_Format][tgf]] file. Tgf files lets you view
-the adjacency matrix of any graph.
+You can also supply the tool with a .tgf file. [[https://en.wikipedia.org/wiki/Trivial_Graph_Format][TGF]] files lets you
+generate an adjacency matrix from any graph.
 
 There are example outputs available at the [[http://danamlund.dk/adjmatrix][Adjacency matrix code
 visualizer page]].
@@ -42,3 +42,11 @@ to include/exclude. See more at the [[http://classycle.sourceforge.net/usageAnal
 $ java -jar adjmatrix.jar -includingClasses=java.util,java.function rt.jar
 $ chromium output.html
 #+END_SRC
+
+* Bugs
+ - The javascript is bad, and I only tested it on Chromium 48.0 and Firefox 45.0.
+ - The UI is bad. It should be separated completely independent
+   groups: node selection, node sorting, and node coloring. Fixing
+   this would mean porting the "sort by similarity" algorithm to
+   javascript, but that algorithm is the slowest part of the html
+   generation.

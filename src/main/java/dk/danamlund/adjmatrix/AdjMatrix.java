@@ -187,7 +187,7 @@ public class AdjMatrix {
         return nodeConnections.get(nodeConnections.size() / 2);
     }
 
-    public AdjMatrix sortedBySimilarity2() {
+    public AdjMatrix sortedBySimilarity() {
         class GroupScore implements Comparable<GroupScore> {
             Set<Integer> group;
             int groupSize;
@@ -273,78 +273,6 @@ public class AdjMatrix {
         List<Integer> order = new ArrayList<>();
         order.addAll(groups.stream().flatMap(gs -> gs.group.stream()).collect(Collectors.toList()));
         order.addAll(left);
-        return new AdjMatrix(this, order);
-    }
-
-    public AdjMatrix sortedBySimilarity() {
-        int medianConnections = getMedianConnections();
-        double groupThreshold = (double) medianConnections / nodes.size();
-        return sortedBySimilarity(groupThreshold);
-    }
-    // Does not work very well
-    private AdjMatrix sortedBySimilarity(double groupThreshold) {
-        List<Integer> order = new ArrayList<>(selected);
-        // Grouping shuffles nodes around that might make for a better similarity graph
-        for (int iteration0 = 0; iteration0 < 10; iteration0++) {
-            for (int iteration = 0; iteration < 100/*nodes.size()*/; iteration++) {
-                int[] orderIndexOf = new int[order.size()];
-                for (int i = 0; i < orderIndexOf.length; i++) {
-                    orderIndexOf[order.get(i)] = i;
-                }
-                Map<Integer, Double> toIndexSum = new HashMap<>();
-                for (int i : order) {
-                    int indexSum = 0;
-                    int indexCount = 0;
-                    for (Set<Integer> edges : Arrays.asList(edgesFrom.get(i), edgesTo.get(i))) {
-                        for (int other : edges) {
-                            indexSum += orderIndexOf[other];
-                            indexCount++;
-                        }
-                    }
-                    toIndexSum.put(i, (double) indexSum / indexCount);
-                }
-
-                order.sort((a,b) -> toIndexSum.get(a).compareTo(toIndexSum.get(b)));
-
-                // wobble to get out of local optimums
-                double prevIndex = -1.0;
-                for (Integer i : order) {
-                    if (toIndexSum.get(i) == prevIndex) {
-                        toIndexSum.put(i, toIndexSum.get(i) + (random.nextDouble() - 0.5));
-                    } else {
-                        prevIndex = toIndexSum.get(i);
-                    }
-                }
-                order.sort((a,b) -> toIndexSum.get(a).compareTo(toIndexSum.get(b)));
-            }
-
-            // Put biggest group first
-            List<List<Integer>> groups = new ArrayList<>();
-            List<Integer> group = new ArrayList<>();
-            for (int i : order) {
-                if (group.isEmpty()) {
-                    group.add(i);
-                    continue;
-                }
-                int connections = 0;
-                for (int other : group) {
-                    if (edgesFrom.get(i).contains(other) || edgesTo.get(i).contains(other)) {
-                        connections++;
-                    }
-                }
-                if ((double) connections / group.size() > groupThreshold) {
-                    group.add(i);
-                } else {
-                    groups.add(group);
-                    group = new ArrayList<>();
-                    group.add(i);
-                }
-            }
-            groups.add(group);
-            groups.sort((a, b) -> Integer.compare(b.size(), a.size()));
-            order = groups.stream().flatMap(List::stream).collect(Collectors.toList());
-        }
-
         return new AdjMatrix(this, order);
     }
 
@@ -638,7 +566,7 @@ public class AdjMatrix {
                                 orderings.put("Connections", () -> adj.sortedByDegree().selected);
                                 orderings.put("Used", () -> adj.sortedByUsed().selected);
                                 orderings.put("Uses", () -> adj.sortedByUses().selected);
-                                orderings.put("Similarity", () -> adj.sortedBySimilarity2().selected);
+                                orderings.put("Similarity", () -> adj.sortedBySimilarity().selected);
 
                                 for (String dataKey : adj.nodesData.keySet()) {
                                     orderings.put(dataKey, () -> adj.sortedByNodeData(dataKey).selected);
