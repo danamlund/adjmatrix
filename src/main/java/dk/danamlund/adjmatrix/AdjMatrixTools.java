@@ -102,17 +102,6 @@ public class AdjMatrixTools {
                 // ignore package-info
                 continue;
             }
-            String jar = split[split.length - 1];
-            if (jar.endsWith(".jar")) {
-                for (String sep : Arrays.asList("/", "\\")) {
-                    if (jar.contains(sep)) {
-                        jar = jar.substring(jar.lastIndexOf(sep) + 1);
-                    }
-                }
-                nodeToJar.put(from, jar);
-            } else {
-                nodeToJar.put(from, "<unknown>");
-            }
             if (className == null || className.isEmpty()) {
                 throw new IllegalStateException("Could not find className for: " + line);
             }
@@ -121,6 +110,17 @@ public class AdjMatrixTools {
                 graphBuilder.add(from, className);
             } else {
                 from = className;
+                String jar = split[split.length - 1];
+                if (jar.endsWith(".jar")) {
+                    for (String sep : Arrays.asList("/", "\\")) {
+                        if (jar.contains(sep)) {
+                            jar = jar.substring(jar.lastIndexOf(sep) + 1);
+                        }
+                    }
+                    nodeToJar.put(from, jar);
+                } else {
+                    nodeToJar.put(from, "<unknown>");
+                }
             }
         }
         AdjMatrix adjMatrix = graphBuilder.buildMatrix();

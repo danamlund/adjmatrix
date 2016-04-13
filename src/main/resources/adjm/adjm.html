@@ -16,6 +16,7 @@
 
   <input id="filterText" type="text">
   <button id="filterButton">Filter</button>
+  <button id="addConnected">Add connected</button>
   <button id="addUses">Add uses</button>
   <button id="addUsed">Add used by</button>
 
@@ -61,13 +62,14 @@
 
   <dl>
     <dt>See how connected your packages are</dt>
-    <dd>Sort and color by <em>Package</em>. A perfect code base will
-    have box shapes along the diagonal in the same color, and not many
-    points above or next to this box. A box of the same color shows
-    that classes within a package uses each other. Having few points
-    above or next to the box means that other packages do not used by
-    other packages. A Tools packages would have many points above and
-    below it because it is being used by all classes.</dd>
+    <dd>Sort and color by <em>Package</em>. Nicely separated packages
+    will have box shapes along the diagonal in the same color, and not
+    many points above or next to this box. A box of the same color
+    shows that classes within a package uses each other. Having few
+    points above or next to the box means that package is not
+    connected to other packages. A Tools packages would have many
+    points above and below it because it is being used by all
+    classes.</dd>
 
     <dt>Highlight groups of highly connected classes</dt>
     <dd>Sort by <em>Similarity</em> and color
@@ -78,7 +80,7 @@
     connected. If there are two boxes with the same color, then that
     package should perhaps be split into two packages.</dd>
 
-    <dt>Identify tools classes</dt>
+    <dt>Identify base classes</dt>
     <dd>Sort by <em>Used</em>. The most used classes are near the top
     left. If you see colors in the full height at the left part you
     have classes that are heavily used from all your classes. If you
@@ -90,11 +92,11 @@
     classes are near the top left.</dd>
 
     <dt>Find <a href="https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon">Bacon</a></dt>
-    <dd>Find one or a few classes by zooming or filtering. The click
-    the <em>Add uses</em> or <em>Add used by</em> buttons to show all
-    classes that uses or are used by your starting classes. See how
-    few clicks it takes to connect all your classes from different
-    start classes.</dd>
+    <dd>Find one or a few classes by zooming or filtering. Then click
+    the <em>Add connected</em>, <em>Add uses</em> or <em>Add used
+    by</em> buttons to show all classes that uses or are used by your
+    starting classes. See how few clicks it takes to connect all your
+    classes from different start classes.</dd>
   </dl>
 
   <h3>How</h3>

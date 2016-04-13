@@ -117,9 +117,11 @@ function main() {
     };
 
     document.getElementById("addUses").addEventListener('click', function () { 
-        addConnected(state.data.edgesFrom); }, false);
+        addConnected([state.data.edgesFrom]); }, false);
     document.getElementById("addUsed").addEventListener('click', function () { 
-        addConnected(state.data.edgesTo); }, false);
+        addConnected([state.data.edgesTo]); }, false);
+    document.getElementById("addConnected").addEventListener('click', function () { 
+        addConnected([state.data.edgesFrom, state.data.edgesTo]); }, false);
 
     populateOptions();
 
@@ -229,7 +231,7 @@ function filter() {
     updateSelection();
 }
 
-function addConnected(edgess) {
+function addConnected(edgesss) {
     state.filterText = null;
     var selectedContains = new Array(state.data.nodes.length);
     for (var i = 0; i < state.selected.length; i++) {
@@ -240,12 +242,15 @@ function addConnected(edgess) {
     for (var i = 0; i < state.selected.length; i++) {
         var node = state.selected[i];
         newSelected.push(node);
-        var edges = edgess[node];
-        for (var j = 0; j < edges.length; j++) {
-            var connection = edges[j];
-            if (!selectedContains[connection]) {
-                newSelected.push(connection);
-                selectedContains[connection] = true;
+        for (var k = 0; k < edgesss.length; k++) {
+            var edgess = edgesss[k];
+            var edges = edgess[node];
+            for (var j = 0; j < edges.length; j++) {
+                var connection = edges[j];
+                if (!selectedContains[connection]) {
+                    newSelected.push(connection);
+                    selectedContains[connection] = true;
+                }
             }
         }
     }
@@ -505,7 +510,7 @@ function adjMatrixMouseMove(e) {
         } else {
             if (inArray(state.data.edgesFrom[from], to)) {
                 document.getElementById("tooltip").innerHTML = 
-                    state.data.nodes[from] + " > " + state.data.nodes[to];
+                    state.data.nodes[from] + " uses " + state.data.nodes[to];
             } else {
                 adjMatrixMouseOut(null);
             }

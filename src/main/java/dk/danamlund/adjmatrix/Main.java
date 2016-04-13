@@ -1,5 +1,6 @@
 package dk.danamlund.adjmatrix;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -9,7 +10,7 @@ import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] argsArray) {
-        List<String> args = Arrays.asList(argsArray);
+        List<String> args = new ArrayList<>(Arrays.asList(argsArray));
         if (args.size() == 0 || args.contains("-h") || args.contains("--help")
             || args.contains("-help")) {
             System.out.println("Usage: java -jar adjmatrix.jar [-out output.html] [args] library-to-visualize.[jar|zip|class|folder]");

@@ -17,47 +17,6 @@ import org.junit.Test;
 public class AdjMatrixToolsTest {
 
     @Test
-    public void testFoo() {
-        // AdjMatrix adj = AdjMatrixTools.readClassycleRaw("src/test/resources/classycleraw1.txt");
-
-        // AdjMatrix adj = AdjMatrixTools.readClassycleRaw("src/test/resources/classycleraw3.txt");
-
-        AdjMatrix adj = 
-            AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.rt.txt");
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.gwt.txt");
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.hibernate.txt");
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.commons-lang.txt");
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.minecraft.txt");
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.guava.txt");
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.eclipse.txt");
-        
-        //System.out.println(adj.toMap().get("junit.extensions.ActiveTestSuite"));
-        // System.out.println(adj.toMap().get("org.junit.runners.model.TestClass"));
-        
-        //System.out.println(adj.toMap().get("org.junit.runners.Parameterized"));
-        // adj.toHtml("test.html");
-
-        Map<String, Supplier<AdjMatrix>> groupBy = new LinkedHashMap<>();
-        groupBy.put("Class", () -> adj);
-        groupBy.put("Package", () -> adj.groupedByPackage());
-        groupBy.put("Jar", () -> adj.groupedByNodeData("jar"));
-        AdjMatrix.toHtml("test.html", groupBy);
-        
-        // System.out.println(adj.sortedBySimilarity().stringify());
-
-        // AdjMatrix adj = 
-        //     AdjMatrixTools.readClassycleRaw("/home/vk/down/Classycle1.4.2/test/out.rt.txt");
-        // System.out.println("## " + adj.getSize());
-        // System.out.println("## " + adj.sortedBySimilarity().getSize());
-    }
-
-    @Test
     public void testTgf() throws Exception {
         Path tmp = Files.createTempFile("AdjMatrixToolsTest", "tgf");
         try {
