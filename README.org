@@ -26,13 +26,13 @@ The default behavior is to generate a file called
 adjmatrix.jar should have the same effect.
 #+BEGIN_SRC shell
 $ java -jar adjmatrix.jar library-to-visualize.jar
-$ chromium output.html
+$ firefox output.html
 #+END_SRC
 
 You can define a custom output file/location using =-out=.
 #+BEGIN_SRC shell
 $ java -jar adjmatrix.jar -out ../myoutput.html library1-to-visualize.jar library2-to-visualize.jar
-$ chromium ../myoutput.html
+$ firefox ../myoutput.html
 #+END_SRC
 
 The tool supports classycle arguments, so you can define which classes
@@ -40,7 +40,7 @@ to include/exclude. See more at the [[http://classycle.sourceforge.net/usageAnal
 
 #+BEGIN_SRC shell
 $ java -jar adjmatrix.jar -includingClasses=java.util,java.function rt.jar
-$ chromium output.html
+$ firefox output.html
 #+END_SRC
 
 * Bugs
