@@ -41,7 +41,7 @@ public class AdjMatrixToolsTest {
         // System.out.println(adj.toMap().get("org.junit.runners.model.TestClass"));
         
         //System.out.println(adj.toMap().get("org.junit.runners.Parameterized"));
-        adj.toHtml("test.html");
+        // adj.toHtml("test.html");
 
         Map<String, Supplier<AdjMatrix>> groupBy = new LinkedHashMap<>();
         groupBy.put("Class", () -> adj);

@@ -430,7 +430,7 @@ function drawAdjacencyMatrix() {
     state.canvas.height = state.canvas.width;
 
     var canvasRect = state.canvas.getBoundingClientRect();
-    state.canvasOverlay.style.top = canvasRect.top;
+    state.canvasOverlay.style.top = canvasRect.top + window.scrollY;
     state.canvasOverlay.style.left = canvasRect.left;
     state.canvasOverlay.width = state.canvas.width;
     state.canvasOverlay.height = state.canvas.height;

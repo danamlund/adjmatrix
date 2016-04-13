@@ -10,16 +10,17 @@ import java.util.function.Supplier;
 public class Main {
     public static void main(String[] argsArray) {
         List<String> args = Arrays.asList(argsArray);
-        if (args.size() < 2 || args.contains("-h") || args.contains("--help")
+        if (args.size() == 0 || args.contains("-h") || args.contains("--help")
             || args.contains("-help")) {
             System.out.println("Usage: java -jar adjmatrix.jar [-out output.html] [args] library-to-visualize.[jar|zip|class|folder]");
             System.out.println("   or: java -jar adjmatrix.jar [-out output.html] my-graph.tgf");
+            System.out.println("Web: http://danamlund.dk/adjmatrix");
             System.out.println();
             System.out.println("Non-tgf files are passed to classycle, so these args work:");
             System.out.println("    [-includingClasses=<pattern1>[,<pattern2>,...]]");
             System.out.println("    [-excludingClasses=<pattern1>[,<pattern2>,...]]");
             System.out.println("    [-reflectionPattern=[<pattern1>,<pattern2>,...]]");
-            System.out.println(" See: http://classycle.sourceforge.net/");
+            System.out.println("    See http://classycle.sourceforge.net/");
             return;
         }
 
