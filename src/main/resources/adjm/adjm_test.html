@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<script>
+var data = {
+  "Name" : {
+    "nodes" : ["A", "B", "C", "D", "E"],
+    "edgesFrom" : [
+        [1, 2],
+        [0, 3],
+        [0, 3, 4],
+        [1, 2, 4],
+        [2, 3]
+    ],
+    "edgesTo" : [
+        [1, 2],
+        [0, 3],
+        [0, 3, 4],
+        [1, 2, 4],
+        [2, 3]
+    ],
+    "nodesData" : {
+       "jar" : ["foo.jar", "foo.jar", "foo.jar", "foo.jar", "foo.jar"],
+    },
+    "orderings" : {
+        "Name" : [0, 1, 2, 3, 4],
+        "Reversed" : [4, 3, 2, 1, 0],
+        "Random" : [2, 0, 1, 4, 3],
+        "jar" : [2, 0, 3, 2, 4]
+    },
+    "colors" : {
+        "Name" : ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF" ],
+        "jar" :  ["#FF00FF", "#FF00FF", "#FF00FF", "#FF00FF", "#FF00FF" ], 
+    }
+  }
+};
+</script>
+<script src="adjm.js"></script>
+</head>
+
+<body>
+  <div id="options">
+  <div id="groupings"></div>
+
+  <input id="filterText" type="text">
+  <button id="filterButton">Filter</button>
+  <button id="addUses">Add uses</button>
+  <button id="addUsed">Add used by</button>
+
+  <div id="orderings"></div>
+  <div id="colorings"></div>
+
+  <div>pixelSize: <input type="range" id="pixelSize" min="0" max="10" value="0">
+      <button id="setPixelSize">set</button>
+  </div>
+
+  <div><div id="info" style="display:inline-block">info</div> 
+       <button id="reset" style="display:inline-block">Reset</button></div>
+  <div id="tooltip">tooltip</div>
+  </div>
+  <table><tr>
+  <td><canvas id="canvasLabel" width="100" height="20"></canvas></td>
+  <td><canvas id="canvas" width="0" height="0"></canvas>
+  </td>
+  </tr></table>
+  <canvas id="canvasOverlay" width="0" height="0" 
+          style="position:absolute; left:0; top:0; z-index:9"></canvas>
+
+  <button id="populateTable">Populate table</button>
+  <button id="clearTable">Clear table</button>
+  <table id="table" border="1" style="border-collapse: collapse">
+  </table>
+  
+  <script>main();</script>
+</body>
+</html>

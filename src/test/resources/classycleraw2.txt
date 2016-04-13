@@ -1,0 +1,25 @@
+============= Classycle V1.4.2 =============
+========== by Franz-Josef Elmer ==========
+read class files and create class graph ... done after 127 ms: 164 classes analysed.
+condense class graph ... done after 14 ms: 142 strong components found.
+calculate class layer indices ... done after 3 ms.
+create package graph ... done after 12 ms: 28 packages.
+condense package graph ... done after 4 ms: 9 strong components found.
+calculate package layer indices ... done after 0 ms.
+class A
+    class B
+    class C
+class B
+    class A
+    class D
+class C
+    class A
+    class D
+    class E
+class D
+    class B
+    class C
+    class E
+class E
+    class C
+    class D

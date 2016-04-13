@@ -1,0 +1,184 @@
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<script>
+// {{{data}}}
+</script>
+<script>
+// {{{javascript}}}
+</script>
+</head>
+
+<body>
+  <div id="options">
+  <div id="groupings"></div>
+
+  <input id="filterText" type="text">
+  <button id="filterButton">Filter</button>
+  <button id="addUses">Add uses</button>
+  <button id="addUsed">Add used by</button>
+
+  <div id="orderings"></div>
+  <div id="colorings"></div>
+
+  <div>pixel size: <input type="range" id="pixelSize" min="0" max="10" value="0">
+      <button id="setPixelSize">set</button>
+  </div>
+
+  <div><div id="info" style="display:inline-block">info</div> 
+       <button id="reset" style="display:inline-block">Reset</button></div>
+  <div id="tooltip">tooltip</div>
+  </div>
+
+  <div>
+    <canvas id="canvas" width="0" height="0"></canvas>
+    <canvas id="canvasOverlay" width="0" height="0" 
+            style="position:absolute; left:0; top:0; z-index:9"></canvas>
+  </div>
+
+  <button id="populateTable">Populate table</button>
+  <button id="clearTable">Clear table</button>
+  <table id="table" border="1" style="border-collapse: collapse">
+  </table>
+
+  <div style="max-width: 800px; font-size: 130%">
+  <h1>Help</h1>
+  <h3>What</h3>
+  <p>The big matrix is an 
+    <a href="https://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency
+    matrix</a>, a representation of a graph. If row 2 and column 4 is
+    colored, that means there exists an edge from node #2 to node
+    #4.</p>
+  <p>This adjacency matrix was generated
+  using <a href="http://danamlund.dk/adjmatrix">Adjacency matrix code visualizer</a>.</p>
+
+  <h3>Why</h3>
+  <p>The adjacency matrix give you an overview over connections in
+  your graph. These examples are about connections between classes in
+  a java code-base. Some interesting revelations this overview can
+  give are:</p>
+
+  <dl>
+    <dt>See how connected your packages are</dt>
+    <dd>Sort and color by <em>Package</em>. A perfect code base will
+    have box shapes along the diagonal in the same color, and not many
+    points above or next to this box. A box of the same color shows
+    that classes within a package uses each other. Having few points
+    above or next to the box means that other packages do not used by
+    other packages. A Tools packages would have many points above and
+    below it because it is being used by all classes.</dd>
+
+    <dt>Highlight groups of highly connected classes</dt>
+    <dd>Sort by <em>Similarity</em> and color
+    by <em>Package</em>. This groups together classes that are highly
+    connected to each other and not highly connected to others,
+    largest groups are at the top left. You should see boxes along the
+    diagonal. If a box has two colors, then two packages are heavily
+    connected. If there are two boxes with the same color, then that
+    package should perhaps be split into two packages.</dd>
+
+    <dt>Identify tools classes</dt>
+    <dd>Sort by <em>Used</em>. The most used classes are near the top
+    left. If you see colors in the full height at the left part you
+    have classes that are heavily used from all your classes. If you
+    see many colors in the whole the matrix, then all classes use all
+    other classes.</dd>
+
+    <dt>Identify God classes</dt>
+    <dd>Sort by <em>Uses</em>. The classes that use the use the most
+    classes are near the top left.</dd>
+
+    <dt>Find <a href="https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon">Bacon</a></dt>
+    <dd>Find one or a few classes by zooming or filtering. The click
+    the <em>Add uses</em> or <em>Add used by</em> buttons to show all
+    classes that uses or are used by your starting classes. See how
+    few clicks it takes to connect all your classes from different
+    start classes.</dd>
+  </dl>
+
+  <h3>How</h3>
+  <dl>
+    <dt>Zoom to rectangle</dt>
+    <dd>You can click-drag a rectangle to zoom in to a part of the
+    matrix. But zooming is weird in a NxN matrix. Zooming to a
+    rectangle shows all rows overlapping the height of the rectangle,
+    and all columns overlapping the width of the rectangle. Because of
+    this, zooming in areas away from the diagonal give weird
+    results.</dd>
+
+    <dt>Mouse-wheel zoom</dt>
+    <dd>You can also use the mouse-wheel to zoom in or out around your
+    mouse pointer. Again, zooming around areas away from the diagonal
+    give weird results.</dd>
+
+    <dt>Group by</dt>
+    <dd>Switches to a new graph where the nodes have been merged. Two
+    merged nodes are connected when any node in the un-merged nodes
+    are connected.</dd>
+
+    <dt>Filter</dt>
+    <dd>Show just the classes that contains your filter text.</dd>
+
+    <dt>Add uses</dt>
+    <dd>Add all classes that uses one of the currently showing
+    classes. This button does nothing when showing all classes.</dd>
+
+    <dt>Add used</dt>
+    <dd>Add all classes that are used by one of the currently showing
+    classes. This button does nothing when showing all classes.</dd>
+
+    <dt>Order by:</dt>
+    <dd>
+      <ul>
+        <li><em>Package</em>: Order nodes by their packages.</li>
+        <li><em>Name</em>: Order nodes by their names.</li>
+        <li><em>Connections</em>: Order nodes by the number of nodes
+          they use plus the number of nodes are used by them. Most
+          connected nodes are near the top left.</li>
+        <li><em>Used</em>: Order nodes by the number of nodes that are
+          used by them.</li>
+        <li><em>Uses</em>: Order nodes by the number of nodes they
+          use.</li>
+        <li><em>Similarity</em>: Attempts to make groups of nodes that
+          are highly connected to each other and not very connected to
+          other nodes. The largest group is near the top left.</li>
+        <li><em>jar</em>: Order nodes by which jar they come from.</li>
+      </ul>
+    </dd>
+
+    <dt>Color by:</dt>
+    <dd>
+      <ul>
+        <li><em>Package</em>: Give nodes in the same package the same
+          color.</li>
+        <li><em>Name</em>: Give nodes a distinct color.</li>
+        <li><em>Connections</em>: Color nodes based on number of nodes
+          they use plus the number of nodes are used by them. Most
+          connected nodes are blue, least connected nodes are
+          black.</li>
+        <li><em>jar</em>: Give nodes in the same jar the same
+          color.</li>
+      </ul>
+    </dd>
+    
+    <dt>Pixel size</dt>
+    <dd>A large pixel size draws nodes as big circles that are
+    transparent. The smallest pixel size draws nodes as pixels. Note:
+    large pixel sizes can get very laggy on large graphs.</dd>
+
+    <dt>Showing current/maximum classes (Reset)</dt>
+    <dd>Tell you how many nodes are currently shown versus how many
+    nodes are in the graph. <em>Reset</em> clears filters and zooms
+    all the way out.</dd>
+
+    <dt>Populate table, Clear table</dt>
+    <dd><em>Populate table</em> creates a table of up to 1000 of the
+    nodes currently shown. <em>Clear table</em> remove the created
+    table.</dd>
+  </dl>
+  </div>
+
+  <script>main();</script>
+</body>
+</html>

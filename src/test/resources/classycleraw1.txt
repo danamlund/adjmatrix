@@ -1,0 +1,1688 @@
+============= Classycle V1.4.2 =============
+========== by Franz-Josef Elmer ==========
+read class files and create class graph ... done after 127 ms: 164 classes analysed.
+condense class graph ... done after 14 ms: 142 strong components found.
+calculate class layer indices ... done after 3 ms.
+create package graph ... done after 12 ms: 28 packages.
+condense package graph ... done after 4 ms: 9 strong components found.
+calculate package layer indices ... done after 0 ms.
+class junit.extensions.ActiveTestSuite (3057 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.InterruptedException
+    class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Thread
+    unknown external class java.lang.Object
+class junit.extensions.RepeatedTest (1241 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.IllegalArgumentException
+    unknown external class java.lang.StringBuilder
+    class junit.extensions.TestDecorator (1036 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+class junit.extensions.TestDecorator (1036 bytes) sources: junit-4.11.jar
+    class junit.framework.Assert (6181 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+class junit.extensions.TestSetup (1905 bytes) sources: junit-4.11.jar
+    class junit.extensions.TestDecorator (1036 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    interface junit.framework.Protectable (191 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Object
+interface junit.extensions.package-info (122 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class junit.framework.Assert (6181 bytes) sources: junit-4.11.jar
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    class junit.framework.ComparisonFailure (1108 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Double
+    unknown external class java.lang.Float
+    unknown external class java.lang.Long
+    unknown external class java.lang.Byte
+    unknown external class java.lang.Character
+    unknown external class java.lang.Short
+    unknown external class java.lang.Integer
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.Math
+    unknown external class java.lang.Boolean
+class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.AssertionError
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+class junit.framework.ComparisonCompactor (2631 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    class junit.framework.Assert (6181 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Math
+class junit.framework.ComparisonFailure (1108 bytes) sources: junit-4.11.jar
+    class junit.framework.ComparisonCompactor (2631 bytes) sources: junit-4.11.jar
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+class junit.framework.JUnit4TestAdapter (4103 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    interface org.junit.Ignore (450 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Filterable (273 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Sortable (186 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.Describable (180 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    class junit.framework.JUnit4TestAdapterCache (4978 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    unknown external class java.lang.String
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+class junit.framework.JUnit4TestAdapterCache (4978 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    class junit.framework.JUnit4TestCaseFacade (1149 bytes) sources: junit-4.11.jar
+    class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.util.HashMap
+    unknown external class java.util.Iterator
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    class junit.framework.JUnit4TestAdapter (4103 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.util.Arrays
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Throwable
+class junit.framework.JUnit4TestCaseFacade (1149 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.Object
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.Describable (180 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+interface junit.framework.Protectable (191 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Class
+    unknown external class java.lang.NoSuchMethodException
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.IllegalAccessException
+    class junit.framework.Assert (6181 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Exception
+    unknown external class java.lang.reflect.Modifier
+class junit.framework.TestFailure (1848 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuffer
+    unknown external class java.lang.StringBuilder
+    unknown external class java.io.StringWriter
+    unknown external class java.io.PrintWriter
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+    unknown external class java.io.Writer
+interface junit.framework.TestListener (342 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class junit.framework.TestFailure (1848 bytes) sources: junit-4.11.jar
+    interface junit.framework.TestListener (342 bytes) sources: junit-4.11.jar
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.ThreadDeath
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.Enumeration
+    abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    interface junit.framework.Protectable (191 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Collections
+    unknown external class java.util.Collection
+class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.NoSuchMethodException
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.InstantiationException
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.IllegalAccessException
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.String
+    unknown external class java.io.StringWriter
+    unknown external class java.io.PrintWriter
+    unknown external class java.util.Vector
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.reflect.Constructor
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.reflect.Method
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Enumeration
+    unknown external class java.lang.reflect.Modifier
+    class org.junit.internal.MethodSorter (4046 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Void
+    unknown external class java.io.Writer
+interface junit.framework.package-info (121 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+abstract class junit.runner.BaseTestRunner (8995 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Properties
+    unknown external class java.io.FileOutputStream
+    unknown external class java.lang.ClassNotFoundException
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Class
+    class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.IllegalAccessException
+    unknown external class java.io.File
+    unknown external class java.io.FileInputStream
+    unknown external class java.io.IOException
+    unknown external class java.lang.NumberFormatException
+    unknown external class java.io.StringWriter
+    unknown external class java.io.PrintWriter
+    unknown external class java.io.StringReader
+    unknown external class java.io.BufferedReader
+    unknown external class java.lang.String
+    interface junit.framework.TestListener (342 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.io.InputStream
+    unknown external class java.lang.StringBuffer
+    unknown external class java.lang.reflect.Modifier
+    unknown external class java.text.NumberFormat
+    unknown external class java.lang.System
+    unknown external class java.io.PrintStream
+    unknown external class java.lang.Integer
+    unknown external class java.io.OutputStream
+    unknown external class java.io.Writer
+    unknown external class java.io.Reader
+interface junit.runner.TestRunListener (453 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+class junit.runner.Version (627 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class java.lang.System
+    unknown external class java.io.PrintStream
+interface junit.runner.package-info (118 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class junit.textui.ResultPrinter (4698 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    class junit.framework.TestFailure (1848 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface junit.framework.TestListener (342 bytes) sources: junit-4.11.jar
+    unknown external class java.io.PrintStream
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Enumeration
+    unknown external class java.lang.String
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+    abstract class junit.runner.BaseTestRunner (8995 bytes) sources: junit-4.11.jar
+    unknown external class java.text.NumberFormat
+class junit.textui.TestRunner (5645 bytes) sources: junit-4.11.jar
+    class junit.textui.ResultPrinter (4698 bytes) sources: junit-4.11.jar
+    class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.StringBuilder
+    abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    abstract class junit.runner.BaseTestRunner (8995 bytes) sources: junit-4.11.jar
+    unknown external class java.io.PrintStream
+    unknown external class java.lang.Class
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+    unknown external class java.lang.System
+    unknown external class java.io.InputStream
+    class junit.runner.Version (627 bytes) sources: junit-4.11.jar
+    interface junit.framework.TestListener (342 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+interface junit.textui.package-info (118 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+interface org.junit.After (373 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+interface org.junit.AfterClass (383 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.AssertionError
+    unknown external class java.lang.String
+    class org.junit.ComparisonFailure (4129 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Double
+    class org.junit.internal.InexactComparisonCriteria (1041 bytes) sources: junit-4.11.jar
+    class org.junit.internal.ExactComparisonCriteria (591 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Float
+    unknown external class java.lang.Object
+    class org.junit.internal.ArrayComparisonFailure (1860 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Deprecated
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.Long
+    unknown external class java.lang.Math
+    unknown external class java.lang.Class
+    unknown external class org.hamcrest.MatcherAssert
+class org.junit.Assume (2360 bytes) sources: junit-4.11.jar
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Boolean
+    unknown external class org.hamcrest.CoreMatchers
+    unknown external class java.util.Arrays
+    unknown external class java.util.List
+interface org.junit.Before (375 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+interface org.junit.BeforeClass (385 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+interface org.junit.ClassRule (394 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+class org.junit.ComparisonFailure (4129 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.AssertionError
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+    unknown external class java.lang.StringBuilder
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Math
+interface org.junit.FixMethodOrder (512 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    class org.junit.runners.MethodSorters (1605 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+interface org.junit.Ignore (450 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+interface org.junit.Rule (384 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+interface org.junit.Test (1032 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Class
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+class org.junit.experimental.ParallelComputer (3513 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.ParentRunner (15320 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Computer (2836 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    interface org.junit.runners.model.RunnerScheduler (205 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.InterruptedException
+    unknown external class java.lang.Object
+    unknown external class java.util.concurrent.ExecutorService
+    unknown external class java.lang.Runnable
+    unknown external class java.util.concurrent.Executors
+    unknown external class java.util.concurrent.TimeUnit
+    unknown external class java.lang.System
+    unknown external class java.util.concurrent.Future
+    unknown external class java.io.PrintStream
+class org.junit.experimental.categories.Categories (8273 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    interface org.junit.experimental.categories.Category (388 bytes) sources: junit-4.11.jar
+    class org.junit.runners.Suite (4944 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.ArrayList
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class java.lang.StringBuilder
+    unknown external class java.util.List
+    unknown external class java.util.Arrays
+    unknown external class java.util.Collection
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+interface org.junit.experimental.categories.Category (388 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Class
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+class org.junit.experimental.max.CouldNotReadCoreException (485 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Throwable
+class org.junit.experimental.max.MaxCore (8591 bytes) sources: junit-4.11.jar
+    unknown external class java.io.File
+    class org.junit.runner.JUnitCore (5899 bytes) sources: junit-4.11.jar
+    class org.junit.internal.requests.SortingRequest (1089 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.JUnit38ClassRunner (8603 bytes) sources: junit-4.11.jar
+    class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.ClassNotFoundException
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    class org.junit.experimental.max.MaxHistory (8538 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.Class
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Collections
+    class org.junit.runners.Suite (4944 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Comparator
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.CharSequence
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.ErrorReportingRunner (3068 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.experimental.max.MaxHistory (8538 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.max.CouldNotReadCoreException (485 bytes) sources: junit-4.11.jar
+    unknown external class java.io.FileInputStream
+    unknown external class java.io.ObjectInputStream
+    unknown external class java.lang.Exception
+    unknown external class java.util.HashMap
+    unknown external class java.io.ObjectOutputStream
+    unknown external class java.io.FileOutputStream
+    unknown external class java.lang.Long
+    unknown external class java.lang.Object
+    unknown external class java.io.Serializable
+    unknown external class java.util.Map
+    unknown external class java.lang.String
+    unknown external class java.io.File
+    unknown external class java.io.IOException
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Comparator
+    unknown external class java.io.InputStream
+    unknown external class java.lang.Throwable
+    unknown external class java.io.OutputStream
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.System
+class org.junit.experimental.results.FailureList (1604 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+class org.junit.experimental.results.PrintableResult (2180 bytes) sources: junit-4.11.jar
+    class org.junit.runner.JUnitCore (5899 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.results.FailureList (1604 bytes) sources: junit-4.11.jar
+    unknown external class java.io.ByteArrayOutputStream
+    class org.junit.internal.TextListener (3825 bytes) sources: junit-4.11.jar
+    unknown external class java.io.PrintStream
+    unknown external class java.lang.Object
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.io.OutputStream
+class org.junit.experimental.results.ResultMatchers (5936 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class org.hamcrest.Matcher
+    class org.junit.experimental.results.PrintableResult (2180 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.StringBuilder
+    unknown external class org.hamcrest.TypeSafeMatcher
+    unknown external class org.hamcrest.Description
+    unknown external class org.hamcrest.BaseMatcher
+    unknown external class java.lang.CharSequence
+class org.junit.experimental.runners.Enclosed (830 bytes) sources: junit-4.11.jar
+    class org.junit.runners.Suite (4944 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+interface org.junit.experimental.theories.DataPoint (311 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+interface org.junit.experimental.theories.DataPoints (313 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+class org.junit.experimental.theories.ParameterSignature (4753 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Object
+    unknown external class java.lang.Class
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.reflect.Constructor
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    unknown external class java.util.Arrays
+abstract class org.junit.experimental.theories.ParameterSupplier (587 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.experimental.theories.ParameterSignature (4753 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    abstract class org.junit.experimental.theories.PotentialAssignment (2866 bytes) sources: junit-4.11.jar
+interface org.junit.experimental.theories.ParametersSuppliedBy (459 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Class
+    abstract class org.junit.experimental.theories.ParameterSupplier (587 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+abstract class org.junit.experimental.theories.PotentialAssignment (2866 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class java.lang.Exception
+class org.junit.experimental.theories.Theories (16701 bytes) sources: junit-4.11.jar
+    interface org.junit.experimental.theories.DataPoint (311 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Error
+    unknown external class java.lang.StringBuilder
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    interface org.junit.experimental.theories.Theory (369 bytes) sources: junit-4.11.jar
+    class org.junit.runners.BlockJUnit4ClassRunner (12752 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.reflect.Field
+    unknown external class java.util.Iterator
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Modifier
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+    unknown external class java.util.Collection
+    unknown external class java.util.ArrayList
+    abstract class org.junit.experimental.theories.PotentialAssignment (2866 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.theories.internal.ParameterizedAssertionError (2371 bytes) sources: junit-4.11.jar
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.theories.internal.Assignments (5450 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.InstantiationException
+    unknown external class java.lang.IllegalAccessException
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.NoSuchMethodException
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Exception
+    unknown external class java.lang.reflect.Constructor
+interface org.junit.experimental.theories.Theory (369 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+class org.junit.experimental.theories.internal.AllMembersSupplier (8784 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    interface org.junit.experimental.theories.DataPoints (313 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+    interface org.junit.experimental.theories.DataPoint (311 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.IllegalArgumentException
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.IllegalAccessException
+    abstract class org.junit.experimental.theories.ParameterSupplier (587 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.theories.ParameterSignature (4753 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    abstract class org.junit.experimental.theories.PotentialAssignment (2866 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.lang.Class
+    unknown external class java.lang.reflect.Field
+    unknown external class java.lang.String
+    unknown external class java.lang.reflect.Modifier
+    unknown external class java.lang.reflect.Array
+    unknown external class java.lang.annotation.Annotation
+class org.junit.experimental.theories.internal.Assignments (5450 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.experimental.theories.ParameterSignature (4753 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.experimental.theories.PotentialAssignment (2866 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.theories.internal.AllMembersSupplier (8784 bytes) sources: junit-4.11.jar
+    interface org.junit.experimental.theories.ParametersSuppliedBy (459 bytes) sources: junit-4.11.jar
+    abstract class org.junit.experimental.theories.ParameterSupplier (587 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Exception
+    unknown external class java.lang.InstantiationException
+    unknown external class java.lang.IllegalAccessException
+    unknown external class java.lang.Class
+    unknown external class java.lang.reflect.Constructor
+    unknown external class java.util.Collection
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+class org.junit.experimental.theories.internal.ParameterizedAssertionError (2371 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.StringBuffer
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.String
+    unknown external class java.util.Collection
+    unknown external class java.util.Iterator
+    unknown external class java.util.Arrays
+    unknown external class java.util.List
+interface org.junit.experimental.theories.suppliers.TestedOn (470 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    interface org.junit.experimental.theories.ParametersSuppliedBy (459 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.theories.suppliers.TestedOnSupplier (1719 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+class org.junit.experimental.theories.suppliers.TestedOnSupplier (1719 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    interface org.junit.experimental.theories.suppliers.TestedOn (470 bytes) sources: junit-4.11.jar
+    abstract class org.junit.experimental.theories.ParameterSupplier (587 bytes) sources: junit-4.11.jar
+    class org.junit.experimental.theories.ParameterSignature (4753 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    abstract class org.junit.experimental.theories.PotentialAssignment (2866 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Integer
+    unknown external class java.lang.Class
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+class org.junit.internal.ArrayComparisonFailure (1860 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Integer
+    unknown external class java.lang.AssertionError
+    unknown external class java.util.List
+    unknown external class java.lang.String
+    unknown external class java.util.Iterator
+    unknown external class java.lang.Object
+class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.RuntimeException
+    unknown external class org.hamcrest.SelfDescribing
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+    unknown external class org.hamcrest.Matcher
+    unknown external class org.hamcrest.Description
+    unknown external class org.hamcrest.StringDescription
+abstract class org.junit.internal.ComparisonCriteria (2368 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    class org.junit.internal.ArrayComparisonFailure (1860 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.AssertionError
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class java.lang.reflect.Array
+    unknown external class java.lang.Class
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+class org.junit.internal.ExactComparisonCriteria (591 bytes) sources: junit-4.11.jar
+    abstract class org.junit.internal.ComparisonCriteria (2368 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+class org.junit.internal.InexactComparisonCriteria (1041 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Double
+    unknown external class java.lang.Float
+    abstract class org.junit.internal.ComparisonCriteria (2368 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+interface org.junit.internal.JUnitSystem (162 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.io.PrintStream
+class org.junit.internal.MethodSorter (4046 bytes) sources: junit-4.11.jar
+    interface org.junit.FixMethodOrder (512 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.util.Comparator
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Class
+    unknown external class java.util.Arrays
+    class org.junit.runners.MethodSorters (1605 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+class org.junit.internal.RealSystem (479 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.internal.JUnitSystem (162 bytes) sources: junit-4.11.jar
+    unknown external class java.io.PrintStream
+    unknown external class java.lang.System
+class org.junit.internal.TextListener (3825 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    unknown external class java.io.PrintStream
+    interface org.junit.internal.JUnitSystem (162 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.List
+    unknown external class java.lang.String
+    unknown external class java.text.NumberFormat
+    unknown external class java.lang.Object
+class org.junit.internal.builders.AllDefaultPossibilitiesBuilder (2560 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.JUnit4Builder (775 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.JUnit3Builder (1050 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.AnnotatedBuilder (2397 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.IgnoredBuilder (880 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.SuiteMethodBuilder (1232 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.NullBuilder (678 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.List
+    unknown external class java.lang.Throwable
+    unknown external class java.util.Arrays
+    unknown external class java.lang.Object
+class org.junit.internal.builders.AnnotatedBuilder (2397 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.RunWith (521 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.Object
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.NoSuchMethodException
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.Exception
+    unknown external class java.lang.reflect.Constructor
+    unknown external class java.lang.annotation.Annotation
+class org.junit.internal.builders.IgnoredBuilder (880 bytes) sources: junit-4.11.jar
+    interface org.junit.Ignore (450 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.IgnoredClassRunner (1120 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+class org.junit.internal.builders.IgnoredClassRunner (1120 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+class org.junit.internal.builders.JUnit3Builder (1050 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.JUnit38ClassRunner (8603 bytes) sources: junit-4.11.jar
+    abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.internal.builders.JUnit4Builder (775 bytes) sources: junit-4.11.jar
+    class org.junit.runners.BlockJUnit4ClassRunner (12752 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.internal.builders.NullBuilder (678 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.internal.builders.SuiteMethodBuilder (1232 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.SuiteMethod (1809 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.NoSuchMethodException
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+    unknown external class java.lang.reflect.Method
+class org.junit.internal.matchers.StacktracePrintingMatcher (2965 bytes) sources: junit-4.11.jar
+    unknown external class java.io.StringWriter
+    unknown external class java.io.PrintWriter
+    unknown external class java.lang.Throwable
+    unknown external class org.hamcrest.TypeSafeMatcher
+    unknown external class org.hamcrest.Matcher
+    unknown external class org.hamcrest.Description
+    unknown external class java.lang.String
+    unknown external class org.hamcrest.Factory
+    unknown external class java.lang.Object
+    unknown external class java.io.Writer
+class org.junit.internal.matchers.ThrowableCauseMatcher (2420 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class org.hamcrest.TypeSafeMatcher
+    unknown external class org.hamcrest.Matcher
+    unknown external class org.hamcrest.Description
+    unknown external class org.hamcrest.Factory
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    unknown external class org.hamcrest.SelfDescribing
+class org.junit.internal.matchers.ThrowableMessageMatcher (2478 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class org.hamcrest.TypeSafeMatcher
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.String
+    unknown external class org.hamcrest.Description
+    unknown external class org.hamcrest.Factory
+    unknown external class java.lang.Object
+    unknown external class org.hamcrest.SelfDescribing
+abstract class org.junit.internal.matchers.TypeSafeMatcher (2299 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Error
+    unknown external class org.hamcrest.BaseMatcher
+    unknown external class java.lang.Class
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Deprecated
+    class org.junit.internal.MethodSorter (4046 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+class org.junit.internal.requests.ClassRequest (1288 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.internal.builders.AllDefaultPossibilitiesBuilder (2560 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+class org.junit.internal.requests.FilterRequest (1443 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.ErrorReportingRunner (3068 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Object
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.Class
+    unknown external class java.lang.Throwable
+class org.junit.internal.requests.SortingRequest (1089 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Comparator
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+interface org.junit.internal.requests.package-info (133 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class org.junit.internal.runners.ClassRoadie (3205 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.FailedBefore (466 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Object
+    unknown external class java.lang.reflect.InvocationTargetException
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.TestClass (4374 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Runnable
+    unknown external class java.util.Iterator
+    unknown external class java.util.List
+    unknown external class java.lang.Deprecated
+class org.junit.internal.runners.ErrorReportingRunner (3068 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.reflect.InvocationTargetException
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.InitializationError (1304 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.Class
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Arrays
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+class org.junit.internal.runners.FailedBefore (466 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Deprecated
+class org.junit.internal.runners.InitializationError (1304 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Exception
+    unknown external class java.util.List
+    unknown external class java.lang.String
+    unknown external class java.lang.Deprecated
+    unknown external class java.util.Arrays
+    unknown external class java.lang.Object
+class org.junit.internal.runners.JUnit38ClassRunner (8603 bytes) sources: junit-4.11.jar
+    class junit.framework.TestSuite (9657 bytes) sources: junit-4.11.jar
+    abstract class junit.framework.TestCase (7613 bytes) sources: junit-4.11.jar
+    class junit.framework.TestResult (5216 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+    interface org.junit.runner.Describable (180 bytes) sources: junit-4.11.jar
+    class junit.extensions.TestDecorator (1036 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.runner.manipulation.Filterable (273 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Sortable (186 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    interface junit.framework.TestListener (342 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Integer
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    class junit.framework.AssertionFailedError (701 bytes) sources: junit-4.11.jar
+class org.junit.internal.runners.JUnit4ClassRunner (9584 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.TestClass (4374 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.MethodValidator (3953 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.ClassRoadie (3205 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Object
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.Exception
+    class org.junit.internal.runners.MethodRoadie (9280 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.TestMethod (2534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Filterable (273 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Sortable (186 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.Class
+    class org.junit.internal.runners.InitializationError (1304 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+    unknown external class java.lang.Throwable
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.reflect.Constructor
+    unknown external class java.util.Collections
+    unknown external class java.lang.Runnable
+    unknown external class java.util.Comparator
+class org.junit.internal.runners.MethodRoadie (9280 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.FailedBefore (466 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.AssertionError
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.reflect.InvocationTargetException
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Object
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.TestMethod (2534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Runnable
+    unknown external class java.lang.String
+    unknown external class java.util.Iterator
+    unknown external class java.util.List
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.Class
+    unknown external class java.util.concurrent.TimeoutException
+    unknown external class java.util.concurrent.ExecutorService
+    unknown external class java.util.concurrent.Callable
+    unknown external class java.util.concurrent.Future
+    unknown external class java.util.concurrent.Executors
+    unknown external class java.util.concurrent.TimeUnit
+    unknown external class java.lang.Long
+class org.junit.internal.runners.MethodValidator (3953 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    interface org.junit.After (373 bytes) sources: junit-4.11.jar
+    interface org.junit.Before (375 bytes) sources: junit-4.11.jar
+    interface org.junit.Test (1032 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    interface org.junit.BeforeClass (385 bytes) sources: junit-4.11.jar
+    interface org.junit.AfterClass (383 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.InitializationError (1304 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    unknown external class java.lang.Throwable
+    class org.junit.internal.runners.TestClass (4374 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.String
+    unknown external class java.util.Iterator
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.reflect.Modifier
+    unknown external class java.lang.Void
+    unknown external class java.lang.reflect.Constructor
+class org.junit.internal.runners.SuiteMethod (1809 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.Exception
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.InvocationTargetException
+    class org.junit.internal.runners.JUnit38ClassRunner (8603 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.reflect.Modifier
+    unknown external class java.lang.String
+class org.junit.internal.runners.TestClass (4374 bytes) sources: junit-4.11.jar
+    interface org.junit.Test (1032 bytes) sources: junit-4.11.jar
+    interface org.junit.BeforeClass (385 bytes) sources: junit-4.11.jar
+    interface org.junit.AfterClass (383 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.Class
+    interface org.junit.Before (375 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.util.Iterator
+    unknown external class java.lang.reflect.Constructor
+    unknown external class java.lang.SecurityException
+    unknown external class java.lang.NoSuchMethodException
+    unknown external class java.lang.String
+    unknown external class java.lang.Deprecated
+    class org.junit.internal.MethodSorter (4046 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Collections
+class org.junit.internal.runners.TestMethod (2534 bytes) sources: junit-4.11.jar
+    interface org.junit.Ignore (450 bytes) sources: junit-4.11.jar
+    interface org.junit.Test (1032 bytes) sources: junit-4.11.jar
+    interface org.junit.Before (375 bytes) sources: junit-4.11.jar
+    interface org.junit.After (373 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.reflect.Method
+    class org.junit.internal.runners.TestClass (4374 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.Throwable
+    unknown external class java.util.List
+    unknown external class java.lang.IllegalArgumentException
+    unknown external class java.lang.IllegalAccessException
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.annotation.Annotation
+class org.junit.internal.runners.model.EachTestNotifier (2266 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.MultipleFailureException (2302 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Object
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+class org.junit.internal.runners.model.MultipleFailureException (752 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.MultipleFailureException (2302 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Deprecated
+abstract class org.junit.internal.runners.model.ReflectiveCallable (721 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.InvocationTargetException
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+interface org.junit.internal.runners.package-info (132 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class org.junit.internal.runners.rules.RuleFieldValidator (5198 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.FrameworkMember (1302 bytes) sources: junit-4.11.jar
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    interface org.junit.rules.MethodRule (267 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Exception
+    interface org.junit.ClassRule (394 bytes) sources: junit-4.11.jar
+    interface org.junit.Rule (384 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Enum
+    unknown external class java.lang.Class
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.String
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Object
+class org.junit.internal.runners.statements.ExpectException (1857 bytes) sources: junit-4.11.jar
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Exception
+    unknown external class java.lang.AssertionError
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.String
+    unknown external class java.lang.Object
+class org.junit.internal.runners.statements.Fail (555 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.internal.runners.statements.FailOnTimeout (4131 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.Object
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.InterruptedException
+    unknown external class java.lang.Long
+    unknown external class java.lang.String
+    unknown external class java.lang.StackTraceElement
+    unknown external class java.lang.Thread
+class org.junit.internal.runners.statements.InvokeMethod (901 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.internal.runners.statements.RunAfters (2182 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    class org.junit.runners.model.MultipleFailureException (2302 bytes) sources: junit-4.11.jar
+class org.junit.internal.runners.statements.RunBefores (1523 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    unknown external class java.lang.Throwable
+class org.junit.matchers.JUnitMatchers (3635 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.String
+    unknown external class org.hamcrest.core.CombinableMatcher
+    unknown external class org.hamcrest.CoreMatchers
+    class org.junit.internal.matchers.StacktracePrintingMatcher (2965 bytes) sources: junit-4.11.jar
+interface org.junit.matchers.package-info (124 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+interface org.junit.package-info (115 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class org.junit.rules.ErrorCollector (3399 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.Throwable
+    abstract class org.junit.rules.Verifier (1740 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.Object
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.String
+    unknown external class java.util.concurrent.Callable
+    class org.junit.runners.model.MultipleFailureException (2302 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+class org.junit.rules.ExpectedException (6503 bytes) sources: junit-4.11.jar
+    class org.junit.rules.ExpectedExceptionMatcherBuilder (1970 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.Class
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+    unknown external class java.lang.AssertionError
+    unknown external class org.hamcrest.CoreMatchers
+    class org.junit.internal.matchers.ThrowableMessageMatcher (2478 bytes) sources: junit-4.11.jar
+    class org.junit.internal.matchers.ThrowableCauseMatcher (2420 bytes) sources: junit-4.11.jar
+    unknown external class org.hamcrest.StringDescription
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+    unknown external class org.hamcrest.SelfDescribing
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+class org.junit.rules.ExpectedExceptionMatcherBuilder (1970 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class org.hamcrest.Matcher
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    unknown external class java.lang.Throwable
+    class org.junit.matchers.JUnitMatchers (3635 bytes) sources: junit-4.11.jar
+    unknown external class org.hamcrest.CoreMatchers
+    unknown external class java.lang.Iterable
+    unknown external class java.util.Collection
+abstract class org.junit.rules.ExternalResource (2102 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+interface org.junit.rules.MethodRule (267 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+class org.junit.rules.RuleChain (1912 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.Collections
+    unknown external class java.util.Collection
+class org.junit.rules.RunRules (1821 bytes) sources: junit-4.11.jar
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Iterable
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.util.Iterator
+    unknown external class java.lang.Object
+class org.junit.rules.TemporaryFolder (3210 bytes) sources: junit-4.11.jar
+    unknown external class java.io.File
+    unknown external class java.io.IOException
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.String
+    unknown external class java.lang.IllegalStateException
+    abstract class org.junit.rules.ExternalResource (2102 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.rules.TestName (646 bytes) sources: junit-4.11.jar
+    abstract class org.junit.rules.TestWatcher (6117 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+abstract class org.junit.rules.TestWatcher (6117 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Object
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.runners.model.MultipleFailureException (2302 bytes) sources: junit-4.11.jar
+class org.junit.rules.TestWatchman (2950 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.rules.MethodRule (267 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Deprecated
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+class org.junit.rules.Timeout (785 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.FailOnTimeout (4131 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+abstract class org.junit.rules.Verifier (1740 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+class org.junit.runner.Computer (2836 bytes) sources: junit-4.11.jar
+    class org.junit.runners.Suite (4944 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+interface org.junit.runner.Describable (180 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Object
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.IllegalArgumentException
+    unknown external class java.lang.ClassNotFoundException
+    unknown external class java.io.Serializable
+    unknown external class java.util.regex.Pattern
+    unknown external class java.lang.String
+    unknown external class java.lang.Class
+    unknown external class java.util.Iterator
+    unknown external class java.util.Collection
+    unknown external class java.util.regex.Matcher
+    unknown external class java.util.Arrays
+    unknown external class java.util.List
+    unknown external class java.lang.ClassLoader
+    unknown external class java.lang.CharSequence
+class org.junit.runner.JUnitCore (5899 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    class org.junit.internal.RealSystem (479 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.ClassNotFoundException
+    unknown external class java.lang.annotation.Annotation
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.internal.TextListener (3825 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.internal.runners.JUnit38ClassRunner (8603 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Computer (2836 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.String
+    interface org.junit.internal.JUnitSystem (162 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.List
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    interface junit.framework.Test (184 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.System
+    class junit.runner.Version (627 bytes) sources: junit-4.11.jar
+    unknown external class java.io.PrintStream
+    unknown external class java.lang.Throwable
+abstract class org.junit.runner.Request (5111 bytes) sources: junit-4.11.jar
+    class org.junit.internal.requests.ClassRequest (1288 bytes) sources: junit-4.11.jar
+    class org.junit.internal.builders.AllDefaultPossibilitiesBuilder (2560 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.RuntimeException
+    class org.junit.internal.runners.ErrorReportingRunner (3068 bytes) sources: junit-4.11.jar
+    class org.junit.internal.requests.FilterRequest (1443 bytes) sources: junit-4.11.jar
+    class org.junit.internal.requests.SortingRequest (1089 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Class
+    unknown external class java.lang.String
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Computer (2836 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Deprecated
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Comparator
+    class org.junit.runner.JUnitCore (5899 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    unknown external class java.util.concurrent.atomic.AtomicInteger
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.Object
+    unknown external class java.io.Serializable
+    unknown external class java.util.List
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Collections
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.System
+interface org.junit.runner.RunWith (521 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Class
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+    unknown external class java.lang.annotation.Inherited
+abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    interface org.junit.runner.Describable (180 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Filterable (273 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.StringBuilder
+interface org.junit.runner.manipulation.Filterable (273 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+interface org.junit.runner.manipulation.Sortable (186 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Sortable (186 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.util.Comparator
+interface org.junit.runner.manipulation.package-info (135 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuffer
+    unknown external class java.lang.StringBuilder
+    unknown external class java.io.StringWriter
+    unknown external class java.io.PrintWriter
+    unknown external class java.lang.Object
+    unknown external class java.io.Serializable
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+    unknown external class java.io.Writer
+class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.runner.notification.StoppedByUserException (425 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.Failure (1967 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.util.List
+    class org.junit.runner.notification.RunListener (1249 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Result (4868 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Collections
+    unknown external class java.util.Arrays
+    unknown external class java.lang.Exception
+    unknown external class java.util.Iterator
+    unknown external class java.lang.Throwable
+class org.junit.runner.notification.StoppedByUserException (425 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.RuntimeException
+interface org.junit.runner.notification.package-info (135 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+interface org.junit.runner.package-info (122 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+class org.junit.runners.AllTests (527 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.SuiteMethod (1809 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.Throwable
+class org.junit.runners.BlockJUnit4ClassRunner (12752 bytes) sources: junit-4.11.jar
+    interface org.junit.Ignore (450 bytes) sources: junit-4.11.jar
+    interface org.junit.Test (1032 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Exception
+    interface org.junit.After (373 bytes) sources: junit-4.11.jar
+    interface org.junit.Before (375 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+    class org.junit.internal.runners.statements.Fail (555 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.InvokeMethod (901 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.ExpectException (1857 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.FailOnTimeout (4131 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.RunBefores (1523 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.RunAfters (2182 bytes) sources: junit-4.11.jar
+    interface org.junit.rules.MethodRule (267 bytes) sources: junit-4.11.jar
+    interface org.junit.Rule (384 bytes) sources: junit-4.11.jar
+    class org.junit.rules.RunRules (1821 bytes) sources: junit-4.11.jar
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.ParentRunner (15320 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.String
+    unknown external class java.lang.Deprecated
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Constructor
+    class org.junit.internal.runners.rules.RuleFieldValidator (5198 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Iterable
+    unknown external class java.util.Collection
+    abstract class org.junit.internal.runners.model.ReflectiveCallable (721 bytes) sources: junit-4.11.jar
+class org.junit.runners.JUnit4 (547 bytes) sources: junit-4.11.jar
+    class org.junit.runners.BlockJUnit4ClassRunner (12752 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+class org.junit.runners.MethodSorters (1605 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Enum
+    unknown external class java.util.Comparator
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.String
+    class org.junit.internal.MethodSorter (4046 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Class
+class org.junit.runners.Parameterized (12568 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.Object
+    unknown external class java.lang.Iterable
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.ClassCastException
+    class org.junit.runners.Suite (4944 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.Throwable
+    unknown external class java.util.Iterator
+    unknown external class java.lang.String
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkField (2047 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Integer
+    unknown external class java.text.MessageFormat
+    unknown external class java.util.Collections
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+    unknown external class java.lang.IllegalArgumentException
+    class org.junit.runners.BlockJUnit4ClassRunner (12752 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Field
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Constructor
+abstract class org.junit.runners.ParentRunner (15320 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    interface org.junit.BeforeClass (385 bytes) sources: junit-4.11.jar
+    interface org.junit.AfterClass (383 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.RunBefores (1523 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.statements.RunAfters (2182 bytes) sources: junit-4.11.jar
+    class org.junit.rules.RunRules (1821 bytes) sources: junit-4.11.jar
+    interface org.junit.ClassRule (394 bytes) sources: junit-4.11.jar
+    interface org.junit.rules.TestRule (234 bytes) sources: junit-4.11.jar
+    class org.junit.internal.runners.model.EachTestNotifier (2266 bytes) sources: junit-4.11.jar
+    class org.junit.internal.AssumptionViolatedException (2600 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    class org.junit.runner.notification.StoppedByUserException (425 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.NoTestsRemainException (418 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Filterable (273 bytes) sources: junit-4.11.jar
+    interface org.junit.runner.manipulation.Sortable (186 bytes) sources: junit-4.11.jar
+    class org.junit.runner.manipulation.Sorter (2576 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    interface org.junit.runners.model.RunnerScheduler (205 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    unknown external class java.lang.Object
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Iterator
+    unknown external class java.lang.annotation.Annotation
+    abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    abstract class org.junit.runner.manipulation.Filter (5477 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Comparator
+    class org.junit.internal.runners.rules.RuleFieldValidator (5198 bytes) sources: junit-4.11.jar
+    unknown external class java.util.Collections
+    unknown external class java.lang.Iterable
+    unknown external class java.util.Collection
+    unknown external class java.lang.Runnable
+class org.junit.runners.Suite (4944 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.Object
+    class org.junit.internal.builders.AllDefaultPossibilitiesBuilder (2560 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.ParentRunner (15320 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    class org.junit.runner.Description (7534 bytes) sources: junit-4.11.jar
+    class org.junit.runner.notification.RunNotifier (15077 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.annotation.Retention
+    unknown external class java.lang.annotation.RetentionPolicy
+    unknown external class java.lang.annotation.Target
+    unknown external class java.lang.annotation.ElementType
+    unknown external class java.lang.annotation.Inherited
+class org.junit.runners.model.FrameworkField (2047 bytes) sources: junit-4.11.jar
+    abstract class org.junit.runners.model.FrameworkMember (1302 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Field
+    unknown external class java.lang.String
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.Class
+    unknown external class java.lang.Object
+    unknown external class java.lang.IllegalArgumentException
+    unknown external class java.lang.IllegalAccessException
+    unknown external class java.lang.reflect.Modifier
+abstract class org.junit.runners.model.FrameworkMember (1302 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.util.List
+    unknown external class java.util.Iterator
+    unknown external class java.lang.String
+    unknown external class java.lang.Class
+class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.lang.StringBuilder
+    class org.junit.runners.model.NoGenericTypeParametersValidator (3480 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Class
+    abstract class org.junit.runners.model.FrameworkMember (1302 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+    unknown external class java.util.List
+    unknown external class java.lang.reflect.Type
+    unknown external class java.lang.Deprecated
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.reflect.Modifier
+    unknown external class java.lang.Void
+    abstract class org.junit.internal.runners.model.ReflectiveCallable (721 bytes) sources: junit-4.11.jar
+class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.Exception
+    unknown external class java.util.List
+    unknown external class java.lang.String
+    unknown external class java.util.Arrays
+    unknown external class java.lang.Object
+class org.junit.runners.model.MultipleFailureException (2302 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+    class org.junit.internal.runners.model.MultipleFailureException (752 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Exception
+    unknown external class java.util.List
+    unknown external class java.lang.String
+    unknown external class java.util.Iterator
+    unknown external class java.util.Collections
+    unknown external class java.lang.Integer
+    unknown external class java.lang.Class
+    unknown external class java.util.Collection
+class org.junit.runners.model.NoGenericTypeParametersValidator (3480 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.TypeVariable
+    unknown external class java.lang.Exception
+    unknown external class java.lang.StringBuilder
+    unknown external class java.lang.reflect.ParameterizedType
+    unknown external class java.lang.reflect.WildcardType
+    unknown external class java.lang.reflect.GenericArrayType
+    unknown external class java.lang.Object
+    unknown external class java.lang.reflect.Method
+    unknown external class java.util.List
+    unknown external class java.lang.reflect.Type
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.String
+abstract class org.junit.runners.model.RunnerBuilder (3277 bytes) sources: junit-4.11.jar
+    unknown external class java.util.HashSet
+    unknown external class java.lang.Throwable
+    class org.junit.internal.runners.ErrorReportingRunner (3068 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.InitializationError (1220 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Class
+    unknown external class java.util.ArrayList
+    unknown external class java.util.Set
+    abstract class org.junit.runner.Runner (572 bytes) sources: junit-4.11.jar
+    unknown external class java.util.List
+    unknown external class java.lang.String
+interface org.junit.runners.model.RunnerScheduler (205 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Runnable
+abstract class org.junit.runners.model.Statement (367 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+class org.junit.runners.model.TestClass (7740 bytes) sources: junit-4.11.jar
+    unknown external class java.util.HashMap
+    unknown external class java.lang.IllegalArgumentException
+    unknown external class java.lang.Class
+    class org.junit.runners.model.FrameworkMethod (6179 bytes) sources: junit-4.11.jar
+    class org.junit.runners.model.FrameworkField (2047 bytes) sources: junit-4.11.jar
+    unknown external class java.util.ArrayList
+    unknown external class java.util.List
+    interface org.junit.Before (375 bytes) sources: junit-4.11.jar
+    interface org.junit.BeforeClass (385 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.annotation.Annotation
+    unknown external class java.lang.IllegalAccessException
+    unknown external class java.lang.RuntimeException
+    unknown external class java.lang.Object
+    unknown external class java.lang.Throwable
+    unknown external class java.lang.StringBuilder
+    unknown external class java.util.Map
+    unknown external class java.lang.reflect.Method
+    unknown external class java.lang.reflect.Field
+    unknown external class java.util.Iterator
+    abstract class org.junit.runners.model.FrameworkMember (1302 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.String
+    unknown external class java.lang.reflect.Constructor
+    class org.junit.internal.MethodSorter (4046 bytes) sources: junit-4.11.jar
+    class org.junit.Assert (10080 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.reflect.Modifier
+interface org.junit.runners.package-info (123 bytes) sources: junit-4.11.jar
+    unknown external class java.lang.Object
