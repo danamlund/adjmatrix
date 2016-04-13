@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>dk.danamlund.adjacencymatrix</groupId>
-  <artifactId>adjacencymatrix</artifactId>
+  <groupId>dk.danamlund.adjmatrix</groupId>
+  <artifactId>adjmatrix</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>adjacency matrix</name>
-  <url>http://danamlund.dk</url>
+  <name>Adjacency matrix code visualizer</name>
+  <url>http://danamlund.dk/adjmatrix</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
