@@ -8,17 +8,29 @@ var data = {
     "nodes" : ["A", "B", "C", "D", "E"],
     "edgesFrom" : [
         [1, 2],
-        [0, 3],
-        [0, 3, 4],
-        [1, 2, 4],
-        [2, 3]
+        [],
+        [4],
+        [],
+        [3]
+
+//        [1, 2],
+//        [0, 3],
+//        [0, 3, 4],
+//        [1, 2, 4],
+//        [2, 3]
     ],
     "edgesTo" : [
-        [1, 2],
-        [0, 3],
-        [0, 3, 4],
-        [1, 2, 4],
-        [2, 3]
+        [],
+        [0],
+        [0],
+        [4],
+        [3]
+ 
+//        [1, 2],
+//        [0, 3],
+//        [0, 3, 4],
+//        [1, 2, 4],
+//        [2, 3]
     ],
     "nodesData" : {
        "jar" : ["foo.jar", "foo.jar", "foo.jar", "foo.jar", "foo.jar"],
@@ -45,6 +57,7 @@ var data = {
 
   <input id="filterText" type="text">
   <button id="filterButton">Filter</button>
+  <button id="addConnected">Add connected</button>
   <button id="addUses">Add uses</button>
   <button id="addUsed">Add used by</button>
 

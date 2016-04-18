@@ -106,10 +106,7 @@ public class AdjMatrixTools {
                 throw new IllegalStateException("Could not find className for: " + line);
             }
 
-            if (line.startsWith("   ")) {
-                graphBuilder.add(from, className);
-            } else {
-                from = className;
+            if (!nodeToJar.containsKey(className)) {
                 String jar = split[split.length - 1];
                 if (jar.endsWith(".jar")) {
                     for (String sep : Arrays.asList("/", "\\")) {
@@ -117,10 +114,16 @@ public class AdjMatrixTools {
                             jar = jar.substring(jar.lastIndexOf(sep) + 1);
                         }
                     }
-                    nodeToJar.put(from, jar);
+                    nodeToJar.put(className, jar);
                 } else {
-                    nodeToJar.put(from, "<unknown>");
+                    nodeToJar.put(className, "<unknown>");
                 }
+            }
+
+            if (line.startsWith("   ")) {
+                graphBuilder.add(from, className);
+            } else {
+                from = className;
             }
         }
         AdjMatrix adjMatrix = graphBuilder.buildMatrix();

@@ -5,7 +5,7 @@
   <groupId>dk.danamlund.adjmatrix</groupId>
   <artifactId>adjmatrix</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.1</version>
   <name>Adjacency matrix code visualizer</name>
   <url>http://danamlund.dk/adjmatrix</url>
 

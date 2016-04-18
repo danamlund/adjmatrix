@@ -13,7 +13,6 @@ function main() {
     state.data = first(state.datas);
     state.canvas = document.getElementById("canvas");
     state.canvasOverlay = document.getElementById("canvasOverlay");
-    var optionsRect = document.getElementById("options").getBoundingClientRect();;
     state.scale = 1;
     state.pixelSize = 0;
     state.filterText = "";
@@ -125,6 +124,7 @@ function main() {
 
     populateOptions();
 
+    var optionsRect = document.getElementById("options").getBoundingClientRect();;
     state.optionsHeight = optionsRect.height + 20;
 
     document.getElementById("setPixelSize").addEventListener('click', setPixelSize, false);

@@ -23,6 +23,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -132,8 +133,36 @@ public class AdjMatrix {
 
     public AdjMatrix sortedByPackage() {
         List<Integer> newSelected = new ArrayList<>(selected);
-        newSelected.sort((a, b) -> getPackage(nodes.get(a)).compareTo(getPackage(nodes.get(b))));
-        return new AdjMatrix(this, newSelected);
+        Comparator<Integer> compare = (a, b) -> 
+            getPackage(nodes.get(a)).compareTo(getPackage(nodes.get(b)));
+        newSelected.sort(compare);
+        AdjMatrix sortedOnce = new AdjMatrix(this, newSelected);
+        return sortedOnce.sortedSameBy(compare, AdjMatrix::sortedByTree);
+    }
+
+    private AdjMatrix sortedSameBy(Comparator<Integer> comparator, 
+                                   Function<AdjMatrix, AdjMatrix> sortedByMethod) {
+        List<Integer> sorted = new ArrayList<>(selected.size());
+        List<Integer> currentSame = new ArrayList<>();
+
+        Consumer<List<Integer>> handleSames = (sames) -> {
+                List<Integer> currentSameSorted = 
+                    sortedByMethod.apply(new AdjMatrix(this, currentSame)).selected;
+                sorted.addAll(currentSameSorted);
+                currentSame.clear();
+        };
+
+        for (Integer i : selected) {
+            if (currentSame.isEmpty() || comparator.compare(currentSame.get(0), i) == 0) {
+                currentSame.add(i);
+            } else {
+                handleSames.accept(currentSame);
+            }
+        }
+        if (!currentSame.isEmpty()) {
+            handleSames.accept(currentSame);
+        }
+        return new AdjMatrix(this, sorted);
     }
 
     public AdjMatrix sortedByDegree() {
@@ -174,8 +203,10 @@ public class AdjMatrix {
         for (int i = 0; i < nodes.size(); i++) {
             dataSorted.add(i);
         }
-        dataSorted.sort(Comparator.comparing(i -> nodesData.get(dataName).get(i)));
-        return new AdjMatrix(this, dataSorted);
+        Comparator<Integer> compare = Comparator.comparing(i -> nodesData.get(dataName).get(i));
+        dataSorted.sort(compare);
+        AdjMatrix sortedOnce = new AdjMatrix(this, dataSorted);
+        return sortedOnce.sortedSameBy(compare, AdjMatrix::sortedByTree);
     }
 
     private int getMedianConnections() {
@@ -185,6 +216,44 @@ public class AdjMatrix {
         }
         nodeConnections.sort(Comparator.naturalOrder());
         return nodeConnections.get(nodeConnections.size() / 2);
+    }
+
+    public AdjMatrix sortedByTree() {
+        Set<Integer> selectedSet = new HashSet<>(this.selected);
+        Map<Integer, Integer> leftsToUsedNumber = new HashMap<>();
+        for (Integer i : this.selected) {
+            int usedNumber = 0;
+            for (Integer usedBy : edgesTo.get(i)) {
+                if (!i.equals(usedBy) && selectedSet.contains(usedBy)) {
+                    usedNumber++;
+                }
+            }
+            leftsToUsedNumber.put(i, usedNumber);
+        }
+        List<Integer> lefts = new LinkedList<>(this.selected);
+        List<Integer> sorted = new ArrayList<>();
+        while (!lefts.isEmpty()) {
+            // compare by times used, then compare by amount of edges going to i.
+            // First remove the node with most edges going to it to -- many leftsToUsedNumber s
+            lefts.sort(Comparator.comparingInt(i -> leftsToUsedNumber.get(i))
+                       .thenComparing
+                       (Comparator.comparingInt(i -> Integer.valueOf(edgesTo.get((int) i).size()))
+                        .reversed()));
+
+            do {
+                Integer i = lefts.get(0);
+                lefts.remove(0);
+                sorted.add(i);
+                leftsToUsedNumber.remove(i);
+                for (Integer uses : edgesFrom.get(i)) {
+                    if (leftsToUsedNumber.containsKey(uses)) {
+                        leftsToUsedNumber.put(uses, 
+                                              leftsToUsedNumber.get(uses) - 1);
+                    }
+                }
+            } while (!lefts.isEmpty() && leftsToUsedNumber.get(lefts.get(0)).equals(0));
+        }
+        return new AdjMatrix(this, sorted);
     }
 
     public AdjMatrix sortedBySimilarity() {
@@ -270,9 +339,14 @@ public class AdjMatrix {
         }
 
         groups.sort(Comparator.comparing((GroupScore gs) -> gs.group.size()).reversed());
+
         List<Integer> order = new ArrayList<>();
-        order.addAll(groups.stream().flatMap(gs -> gs.group.stream()).collect(Collectors.toList()));
-        order.addAll(left);
+
+        for (GroupScore gs : groups) {
+            // sort nodes in group by .sortedByTree
+            order.addAll(new AdjMatrix(this, new ArrayList<>(gs.group)).sortedByTree().selected);
+        }
+        order.addAll(new AdjMatrix(this, new ArrayList<>(left)).sortedByTree().selected);
         return new AdjMatrix(this, order);
     }
 
@@ -562,11 +636,12 @@ public class AdjMatrix {
                             {
                                 Map<String, Supplier<List<Integer>>> orderings = new LinkedHashMap<>();
                                 orderings.put("Package", () -> adj.sortedByPackage().selected);
+                                orderings.put("Similarity", () -> adj.sortedBySimilarity().selected);
+                                orderings.put("Tree", () -> adj.sortedByTree().selected);
                                 orderings.put("Name", () -> adj.sortedByName().selected);
                                 orderings.put("Connections", () -> adj.sortedByDegree().selected);
                                 orderings.put("Used", () -> adj.sortedByUsed().selected);
                                 orderings.put("Uses", () -> adj.sortedByUses().selected);
-                                orderings.put("Similarity", () -> adj.sortedBySimilarity().selected);
 
                                 for (String dataKey : adj.nodesData.keySet()) {
                                     orderings.put(dataKey, () -> adj.sortedByNodeData(dataKey).selected);

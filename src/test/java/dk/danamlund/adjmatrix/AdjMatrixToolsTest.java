@@ -16,6 +16,43 @@ import org.junit.Test;
 
 public class AdjMatrixToolsTest {
 
+    // @Test
+    // public void foo() {
+    //     AdjMatrix adj = AdjMatrixTools.readClassycleRaw("~/down/Classycle1.4.2/test/out.rt.txt");
+    //     // AdjMatrix adj = AdjMatrixTools.readClassycleRaw("~/Classycle1.4.2/test/foo.txt"); 
+    //     Map<String, Supplier<AdjMatrix>> groupBy = new LinkedHashMap<>();
+    //     groupBy.put("Name", () -> adj);
+    //     groupBy.put("Package", () -> adj.groupedByPackage());
+    //     adj.toHtml("test.html", groupBy);
+    // }
+
+    @Test
+    public void testOutput() throws Exception {
+        Path tmp = Files.createTempFile("AdjMatrixToolsTest", "txt");
+        try {
+            Files.write(tmp, Arrays.asList("============= Classycle V1.4.2 =============",
+                                           "========== by Franz-Josef Elmer ==========",
+                                           "read class files and create class graph ... done after 684 ms: 467 classes analysed.",
+                                           "condense class graph ... done after 66 ms: 334 strong components found.",
+                                           "calculate class layer indices ... done after 4 ms.",
+                                           "create package graph ... done after 45 ms: 17 packages.",
+                                           "condense package graph ... done after 1 ms: 17 strong components found.",
+                                           "calculate package layer indices ... done after 0 ms.",
+                                           "interface A (586 bytes) sources: /jar.jar",
+                                           "    interface B (640 bytes) sources: /jar.jar",
+                                           "    interface C (640 bytes) sources: /jar.jar",
+                                           "interface C (586 bytes) sources: /jar.jar",
+                                           "    interface E (640 bytes) sources: /jar.jar",
+                                           "interface E (586 bytes) sources: /jar.jar",
+                                           "    interface D (640 bytes) sources: /jar.jar"
+                                           ));
+            AdjMatrix adj = AdjMatrixTools.readClassycleRaw(tmp.toAbsolutePath().toString());
+            // adj.toHtml("test2.html");
+        } finally {
+            Files.delete(tmp);
+        }
+    }
+
     @Test
     public void testTgf() throws Exception {
         Path tmp = Files.createTempFile("AdjMatrixToolsTest", "tgf");

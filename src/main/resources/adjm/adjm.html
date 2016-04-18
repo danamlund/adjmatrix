@@ -63,22 +63,36 @@
   <dl>
     <dt>See how connected your packages are</dt>
     <dd>Sort and color by <em>Package</em>. Nicely separated packages
-    will have box shapes along the diagonal in the same color, and not
-    many points above or next to this box. A box of the same color
-    shows that classes within a package uses each other. Having few
-    points above or next to the box means that package is not
-    connected to other packages. A Tools packages would have many
-    points above and below it because it is being used by all
-    classes.</dd>
+    will have half-box shapes just above the diagonal in the same
+    color, and not many points above or next to this half-box. A
+    half-box of the same color shows that classes within a package
+    uses each other. Having few points above or next to the half-box
+    means that package is not connected to other packages. A Tools
+    packages would have many points above and below it because it is
+    being used by all classes.</dd>
 
     <dt>Highlight groups of highly connected classes</dt>
     <dd>Sort by <em>Similarity</em> and color
     by <em>Package</em>. This groups together classes that are highly
     connected to each other and not highly connected to others,
-    largest groups are at the top left. You should see boxes along the
-    diagonal. If a box has two colors, then two packages are heavily
-    connected. If there are two boxes with the same color, then that
-    package should perhaps be split into two packages.</dd>
+    largest groups are at the top left. You should see half-boxes
+    along the diagonal. If a half-box has two colors, then two
+    packages are heavily connected. If there are two half-boxes with
+    the same color, then that package should perhaps be split into two
+    packages.</dd>
+
+    <dt>Detect cyclic dependencies</dt>
+    <dd>Sort by <em>Tree</em> (or
+    by <em>Package</em>, <em>Similarity</em>, or <em>Jar</em>). When
+    sorted by tree, all dots below the diagonal are classes that are
+    part of a cycle of dependencies. In a perfect code-base there will
+    be cyclic dependencies and thus no dots below the diagonal. The
+    main purpose
+    of <a href="http://classycle.sourceforge.net/">Classycle<a/> is to
+    detect cyclic dependencies. You should run Classycle on your code
+    to clearly find and eliminate cycles in your code. When sorting by
+    package, similarity and jar, nodes in the same package/group/jar
+    will be sorted by tree.</dd>
 
     <dt>Identify base classes</dt>
     <dd>Sort by <em>Used</em>. The most used classes are near the top
@@ -137,7 +151,17 @@
     <dt>Order by:</dt>
     <dd>
       <ul>
-        <li><em>Package</em>: Order nodes by their packages.</li>
+        <li><em>Package</em>: Order nodes by their packages. Nodes in
+        the same package are ordered by tree.</li>
+        <li><em>Similarity</em>: Attempts to make groups of nodes that
+          are highly connected to each other and not very connected to
+          other nodes. The largest group is near the top left. Nodes
+          in the same group are ordered by tree.</li>
+        <li><em>Tree</em>: If the graph is a tree, then order nodes
+        by <a href="https://en.wikipedia.org/wiki/Breadth-first_search">breadth-first</a>
+        . If the graph is not a tree, then try its best. Ordering a
+        tree by this will not put any dots below the diagonal. Any
+        dots below the diagonal are nodes that form a circle.</li>
         <li><em>Name</em>: Order nodes by their names.</li>
         <li><em>Connections</em>: Order nodes by the number of nodes
           they use plus the number of nodes are used by them. Most
@@ -146,10 +170,8 @@
           used by them.</li>
         <li><em>Uses</em>: Order nodes by the number of nodes they
           use.</li>
-        <li><em>Similarity</em>: Attempts to make groups of nodes that
-          are highly connected to each other and not very connected to
-          other nodes. The largest group is near the top left.</li>
-        <li><em>jar</em>: Order nodes by which jar they come from.</li>
+        <li><em>jar</em>: Order nodes by which jar they come
+        from. Nodes in the same jar are ordered by tree.</li>
       </ul>
     </dd>
 
